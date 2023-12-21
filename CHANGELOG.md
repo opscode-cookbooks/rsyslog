@@ -84,6 +84,8 @@ Standardise files with files in sous-chefs/repo-management
 
 - Standardise files with files in sous-chefs/repo-management
 
+- Update defaults for FreeBSD systems
+
 ## 8.0.2 - *2021-04-14*
 
 - Add check for FreeBSD to prevent trying to install a RELP package

@@ -100,6 +100,11 @@ when 'omnios'
   default['rsyslog']['service_name'] = 'system/rsyslogd'
   default['rsyslog']['modules'] = %w(immark imsolaris imtcp imudp)
   default['rsyslog']['group'] = 'root'
+when 'freebsd'
+  default['rsyslog']['group'] = 'wheel'
+  default['rsyslog']['dir_group'] = 'wheel'
+  default['rsyslog']['service_name'] = 'rsyslogd'
+  default['rsyslog']['config_prefix'] = '/usr/local/etc'
 end
 
 # platform family specific attributes
